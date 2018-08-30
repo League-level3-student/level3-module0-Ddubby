@@ -43,9 +43,9 @@ public class _00_ArrayCheatSheet {
 		}
 		System.out.println(low);
 		//10 print the entire array to see if step 8 was correct
-		/*for (int i = 0; i < ints.length; i++) {
+		for (int i = 0; i < ints.length; i++) {
 			System.out.println(ints[i]);
-		}*/
+		}
 		//11. print the largest number in the array.
 		int high = Integer.MIN_VALUE;
 		for (int i = 0; i < ints.length; i++) {
