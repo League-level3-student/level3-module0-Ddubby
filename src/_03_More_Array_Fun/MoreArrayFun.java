@@ -55,20 +55,19 @@ public class MoreArrayFun {
 	static void RandomStringPrint(String[] strings) {
 		Random random = new Random();
 		int[] indexes = new int[strings.length];
-		boolean done = false;
 		int printed = 0;
 		while (printed < strings.length) {
-			int order = random.nextInt(10);
-			done = false;
-			for (int i = 0; i < indexes.length; i++) {
+			int order = random.nextInt(strings.length);
+			boolean done = false;
+			for (int i = 0; i < strings.length - 1; i++) {
 				if (order == indexes[i]) {
 					done = true;
 					break;
 				}
 			}
 			if (!done) {
-				//System.out.println(strings[order]);
 				indexes[printed] = order;
+				System.out.println(strings[order]);
 				printed = printed + 1;
 			}
 		}
